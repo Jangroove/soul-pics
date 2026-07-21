@@ -90,9 +90,9 @@ Model licenses and attribution links are listed in [`THIRD_PARTY_MODELS.md`](THI
 
 Soul Pics source code is released under the [MIT License](LICENSE). Third-party models and dependencies remain subject to their respective licenses; see [`THIRD_PARTY_MODELS.md`](THIRD_PARTY_MODELS.md).
 
-## Submission items still requiring external action
+## Build Week submission links
 
-- Public or judge-shared source repository
-- Public test URL through the judging period
-- Public YouTube demo with audio, under three minutes
-- `/feedback` Codex Session ID
+- Public source repository: https://github.com/Jangroove/soul-pics
+- Public 2:35 YouTube demo with English audio: https://youtu.be/pDBDTgWetPk
+- Judge test path: clone this repository and follow `docs/en/01_INSTALL_GUIDE.md`
+- Primary Codex Session ID: `019f753f-dc7e-7a10-b2f6-61f2fa4d3f07`
