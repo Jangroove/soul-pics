@@ -1000,7 +1000,7 @@ textarea { min-height: 70px; line-height: 1.45; resize: vertical; }
 .text-style-block > .range { margin: 6px 0 3px; }
 .text-style-block > .range .range-header { grid-template-columns: minmax(70px, 1fr) auto; }
 .block-style-checks { justify-content: flex-start; margin: 3px 0 4px; }
-.block-position-grid, .shadow-control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px 9px; }
+.block-position-grid, .shadow-control-grid, .backdrop-control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px 9px; }
 .block-color-range { display: grid; grid-template-columns: 66px minmax(0, 1fr); align-items: end; gap: 8px; }
 .block-color-range .range { margin: 0; }
 .shadow-color { display: inline-flex; width: 66px; margin-bottom: 3px; }
@@ -1023,14 +1023,16 @@ textarea { min-height: 70px; line-height: 1.45; resize: vertical; }
 .shadow-primary-row { display: grid; grid-template-columns: 66px minmax(0, 1fr); align-items: end; gap: 8px; }
 .shadow-primary-row .range { margin: 0; }
 .shadow-primary-row .shadow-color { margin: 0; }
+.backdrop-primary-row { display: grid; grid-template-columns: 66px minmax(0, 1fr); align-items: end; gap: 8px; }
+.backdrop-primary-row .range { margin: 0; }
+.backdrop-primary-row .backdrop-color { margin: 0; }
 .text-editor .danger { margin-top: 4px; }
 
 .text-editor { padding-bottom: 0; }
 
 .editor-block { margin-top: 4px; }
 
-.text-panel-view { overflow-y: hidden; }
-@media (max-height: 900px) { .text-panel-view { overflow-y: auto; } }
+.text-panel-view { overflow-y: auto; }
 
 .editor-block h3,
 .subject-placement h3,
@@ -1053,9 +1055,9 @@ textarea { min-height: 70px; line-height: 1.45; resize: vertical; }
 }
 .block-color { display: grid; justify-items: center; text-align: center; gap: 3px; }
 .block-color-label { width: 48px; display: block; text-align: center; }
-.block-position-grid .range-stepper, .shadow-control-grid .range-stepper { grid-template-columns: 22px 36px 22px; gap: 2px; }
-.block-position-grid .range-stepper button, .shadow-control-grid .range-stepper button { width: 22px; height: 26px; min-height: 26px; font-size: .88rem; }
-.block-position-grid .range-number, .shadow-control-grid .range-number { width: 36px; height: 26px; min-height: 26px; padding-inline: 1px; font-size: .56rem; }
-.block-position-grid .range-header, .shadow-control-grid .range-header { gap: 4px; font-size: .64rem; }
-.block-color-range .range-header, .shadow-primary-row .range-header { grid-template-columns: auto auto; justify-content: end; gap: 6px; }
-.block-color-range .range-title, .shadow-primary-row .range-title { text-align: right; }
+.block-position-grid .range-stepper, .shadow-control-grid .range-stepper, .backdrop-control-grid .range-stepper { grid-template-columns: 22px 36px 22px; gap: 2px; }
+.block-position-grid .range-stepper button, .shadow-control-grid .range-stepper button, .backdrop-control-grid .range-stepper button { width: 22px; height: 26px; min-height: 26px; font-size: .88rem; }
+.block-position-grid .range-number, .shadow-control-grid .range-number, .backdrop-control-grid .range-number { width: 36px; height: 26px; min-height: 26px; padding-inline: 1px; font-size: .56rem; }
+.block-position-grid .range-header, .shadow-control-grid .range-header, .backdrop-control-grid .range-header { gap: 4px; font-size: .64rem; }
+.block-color-range .range-header, .shadow-primary-row .range-header, .backdrop-primary-row .range-header { grid-template-columns: auto auto; justify-content: end; gap: 6px; }
+.block-color-range .range-title, .shadow-primary-row .range-title, .backdrop-primary-row .range-title { text-align: right; }

@@ -1,6 +1,6 @@
 # Soul Pics — Submission Package Index
 
-Version: v0.7.20  
+Version: v1.0.0
 Status: production build and API-free local cutout path verified.
 
 Soul Pics is a local-first visual composer for thumbnails and social graphics. Background, subject, and text remain separate editable layers, and preview/export share one Canvas renderer.

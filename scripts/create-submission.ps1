@@ -3,9 +3,9 @@ $project = Split-Path -Parent $PSScriptRoot
 $workspace = Resolve-Path (Join-Path $project '..\..')
 $output = Join-Path $workspace 'outputs'
 $staging = Join-Path ([System.IO.Path]::GetTempPath()) ('soul-pics-submission-' + [guid]::NewGuid().ToString('N'))
-$packageRoot = Join-Path $staging 'Soul_Pics_v0.7.20'
-$zip = Join-Path $output 'Soul_Pics_v0.7.20_submission.zip'
-$checksum = Join-Path $output 'Soul_Pics_v0.7.20_submission_SHA256.txt'
+$packageRoot = Join-Path $staging 'Soul_Pics_v1.0.0'
+$zip = Join-Path $output 'Soul_Pics_v1.0.0_submission.zip'
+$checksum = Join-Path $output 'Soul_Pics_v1.0.0_submission_SHA256.txt'
 
 New-Item -ItemType Directory -Path $packageRoot -Force | Out-Null
 New-Item -ItemType Directory -Path $output -Force | Out-Null
@@ -37,7 +37,7 @@ try {
   if (Test-Path -LiteralPath $zip) { Remove-Item -LiteralPath $zip }
   Compress-Archive -LiteralPath $packageRoot -DestinationPath $zip -CompressionLevel Optimal
   $hash = (Get-FileHash -Algorithm SHA256 -LiteralPath $zip).Hash
-  Set-Content -LiteralPath $checksum -Encoding ascii -Value "$hash  Soul_Pics_v0.7.20_submission.zip"
+  Set-Content -LiteralPath $checksum -Encoding ascii -Value "$hash  Soul_Pics_v1.0.0_submission.zip"
   Write-Host $zip
   Write-Host $checksum
 } finally {

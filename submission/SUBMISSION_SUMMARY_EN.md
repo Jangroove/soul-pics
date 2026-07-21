@@ -10,7 +10,7 @@ General image generation can change a subject or composition when a user only wa
 
 ## What is implemented
 
-The app supports independent background, subject, and text layers; API-free local prompt cutout; optional prompt-based background generation; local final-quality adjustment; responsive editing; bilingual UI; and matching Canvas preview/PNG export.
+The app supports independent background, subject, and text layers; API-free local prompt cutout; optional prompt-based background generation; per-text caption backgrounds with color, opacity, padding, rounded corners, and local blur; local final-quality adjustment; responsive editing; bilingual UI; and matching Canvas preview/PNG export.
 
 ## API and cost disclosure
 

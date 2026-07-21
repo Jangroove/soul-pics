@@ -1,4 +1,4 @@
-# Soul Pics v0.7.20 User Guide
+# Soul Pics v1.0.0 User Guide
 
 Soul Pics is a local web app that keeps background, subject, and text as independent layers and uses the same Canvas renderer for preview and PNG export. Switch the interface with `EN / 日本語` at the top right.
 
@@ -38,7 +38,7 @@ The app converts the prompt locally and processes it with Grounding DINO, SAM 2.
 
 ## 4. Add text
 
-The **Text** tab supports multiple layers. Adjust text, font, color, size, position, Bold B, Italic I, Underline U, outline, and shadow. Drag text directly on the preview.
+The **Text** tab supports multiple layers. Adjust text, font, color, size, position, Bold B, Italic I, Underline U, outline, and shadow. Each layer also has a **Text background** with color, opacity, horizontal and vertical padding, corner radius, and blur controls. Drag text directly on the preview.
 
 **PC fonts** can list installed fonts after Chrome or Edge receives Local fonts permission. The built-in fallback list remains available without that permission.
 

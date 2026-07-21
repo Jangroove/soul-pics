@@ -1,4 +1,4 @@
-# Soul Pics v0.7.20 インストールガイド
+# Soul Pics v1.0.0 インストールガイド
 
 ## 1. 対応環境
 
@@ -16,7 +16,7 @@ Gitはソース取得時のみ任意です。OpenAI APIキーは背景自動生�
 ZIPを任意の書き込み可能なフォルダーへ展開し、CMDでプロジェクトフォルダーへ移動します。
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm ci --no-audit --no-fund
 ```
 
@@ -45,14 +45,14 @@ scripts\start-soul-pics.cmd
 CMD 1:
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm run server
 ```
 
 CMD 2:
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm run dev
 ```
 

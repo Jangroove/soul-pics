@@ -1,4 +1,4 @@
-# Soul Pics v0.7.20
+# Soul Pics v1.0.0
 
 ![Soul Pics — OpenAI Build Week thumbnail](submission/Soul_Pics_Devpost_Thumbnail.png)
 
@@ -8,8 +8,9 @@
 
 Soul Pics is a local-first image composer for posters, social assets, and thumbnails. Backgrounds, subjects, and text stay as independent layers, and preview/export share one Canvas renderer.
 
-## What changed in v0.7.1-v0.7.20
+## What changed in v0.7.1-v1.0.0
 
+- Added per-text caption backgrounds with adjustable color, opacity, padding, corner radius, and local blur.
 - Refined bilingual explanatory copy and made local/no-charge versus paid/API guidance visually distinct.
 - Standardized explanatory text color, size, and line height across the Subject, Canvas, and final-quality areas.
 - Made Subject placement controls permanently visible and reorganized them into Size/Rotation and X/Y rows.
@@ -40,7 +41,7 @@ See [`CHANGELOG.md`](CHANGELOG.md) for the recovered per-change version history.
 ## Windows setup
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm ci --no-audit --no-fund
 npm run setup:local-ai
 ```

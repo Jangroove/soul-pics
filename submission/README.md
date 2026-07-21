@@ -1,6 +1,6 @@
 # Soul Pics — Submission Materials
 
-This folder contains the current submission-facing materials for v0.7.20.
+This folder contains the current submission-facing materials for v1.0.0.
 
 - `SUBMISSION_SUMMARY_EN.md` — English submission summary
 - `FINAL_SUBMISSION_CHECKLIST.md` — evidence-based release checklist

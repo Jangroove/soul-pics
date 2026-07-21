@@ -24,7 +24,7 @@ from transformers import (
 )
 
 
-SOURCE_VERSION = "v0.7.20"
+SOURCE_VERSION = "v1.0.0"
 TRANSLATION_MODEL = "Helsinki-NLP/opus-mt-ja-en"
 GROUNDING_MODEL = "IDEA-Research/grounding-dino-tiny"
 SAM_MODEL = "facebook/sam2.1-hiera-small"

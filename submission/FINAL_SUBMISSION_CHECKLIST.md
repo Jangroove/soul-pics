@@ -2,12 +2,13 @@
 
 ## Product and local evidence
 
-- [x] v0.7.20 source package present
+- [x] v1.0.0 source package present
 - [x] Official V11 logo retained
 - [x] English and Japanese application UI
 - [x] OpenAI API boundary documented as explicit background generation only
 - [x] Japanese-prompt local cutout verified without OpenAI API
 - [x] Final-quality adjustment verified and documented as local/API-free
+- [x] Text background color, opacity, padding, corner radius, and blur verified in English and Japanese UI
 - [x] Japanese and English installation, user, and specification documents reconciled with the final UI
 - [x] Runtime dependencies pinned and production build passed
 - [x] Release ZIP scanned for `.env`, API-key patterns, billing notes, personal work paths, `node_modules`, `.local-ai`, and internal work material

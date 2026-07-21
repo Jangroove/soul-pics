@@ -1,4 +1,4 @@
-# Soul Pics — Project Specification v0.7.20
+# Soul Pics — Project Specification v1.0.0
 
 ## Product
 
@@ -23,7 +23,7 @@ Normal editing keeps source images in the browser. Local cutout sends the source
 - YouTube landscape, Shorts portrait, Instagram portrait, X header, profile icon, and custom canvas sizes
 - Background upload, fit modes, positioning, and optional prompt generation
 - Subject upload, local prompt cutout, size, position, rotation, and horizontal/vertical flip
-- Multiple draggable text layers with fill, outline, shadow, bold, italic, and underline controls
+- Multiple draggable text layers with fill, outline, shadow, bold, italic, underline, and caption backgrounds with adjustable color, opacity, padding, corner radius, and blur
 - Local final-quality adjustment with recommendations and manual controls
 - Shared Canvas renderer for preview and PNG export
 - English/Japanese UI switch

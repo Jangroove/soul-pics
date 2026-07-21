@@ -1,4 +1,4 @@
-# Soul Pics — Build Week scope (v0.7.20)
+# Soul Pics — Build Week scope (v1.0.0)
 
 ## Implemented
 

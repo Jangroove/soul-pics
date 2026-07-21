@@ -12,7 +12,7 @@ const PRESETS = {
 }
 
 const CUSTOM_LIMITS = { min: 64, max: 4096 }
-const UI_VERSION = 'v0.7.20'
+const UI_VERSION = 'v1.0.0'
 
 const DEFAULT_FONT_OPTIONS = [
   ['Arial', 'Arial, sans-serif'],
@@ -54,7 +54,7 @@ const COPY = {
     subject: '3. Subject & placement', uploadSource: 'Upload source image', keepQuestion: 'What should Soul Pics keep?', keepPlaceholder: 'e.g. Keep only the person and the product in their hands', creatingMask: 'Creating local cutout…', createMask: 'Create local AI cutout', saveSubject: 'Save cutout image', maskHint: 'The prompt instructions are converted on this PC and processed with Grounding DINO, SAM 2.1, and BiRefNet. Everything runs locally, so there are no additional charges.',
     placement: 'Placement controls', size: 'Size', x: 'X', y: 'Y', rotation: 'Rotation', brightness: 'Brightness', contrast: 'Contrast', flip: 'Flip horizontally', flipVertical: 'Flip vertically',
     output: 'Output', outputHint: 'Preview and download share one Canvas renderer.', dragHint: 'Drag the background, subject, or text directly on the preview.', previewLabel: 'Soul Pics output preview', processing: 'Processing', processingHint: 'Please keep this tab open. The preview will update automatically when finished.', loadingBackground: 'Loading and preparing the background image…', loadingSubject: 'Loading and preparing the subject image…', loadingFontsProcessing: 'Loading the fonts installed on this PC…',
-    textLayers: '4. Text layers', textBlock: 'Text', outlineBlock: 'Outline', shadowBlock: 'Shadow', blockColor: 'Color', blockWidth: 'Width', blockOpacity: 'Opacity', blockSpread: 'Spread', blockBlur: 'Blur', layer: 'Layer', addLayer: 'Add text layer', text: 'Text', font: 'Font', loadFonts: 'PC fonts', loadingFonts: 'Loading…', textColor: 'Text color', outlineColor: 'Outline color', shadowColor: 'Shadow color', outline: 'Outline', shadowSize: 'Shadow spread', textShadowOpacity: 'Shadow opacity', textShadowX: 'Shadow X', textShadowY: 'Shadow Y', textShadowBlur: 'Blur', shadowX: 'Shadow X', shadowY: 'Shadow Y', shadowBlur: 'Shadow blur', bold: 'Bold', italic: 'Italic', underline: 'Underline', removeLayer: 'Remove selected layer', fontsLoaded: '{count} installed font families loaded.', noFontsFound: 'This browser returned no local fonts. The fallback list remains available.', fontAccessUnsupported: 'This browser cannot list installed fonts. Use desktop Chrome or Edge.', fontAccessDenied: 'Font access was not allowed. You can enable Local fonts in the site permissions and try again.',
+    textLayers: '4. Text layers', textBlock: 'Text', backgroundBlock: 'Text background', outlineBlock: 'Outline', shadowBlock: 'Shadow', blockColor: 'Color', blockWidth: 'Width', blockOpacity: 'Opacity', blockSpread: 'Spread', blockBlur: 'Blur', blockPaddingX: 'Horizontal padding', blockPaddingY: 'Vertical padding', blockRadius: 'Corner radius', layer: 'Layer', addLayer: 'Add text layer', text: 'Text', font: 'Font', loadFonts: 'PC fonts', loadingFonts: 'Loading…', textColor: 'Text color', outlineColor: 'Outline color', shadowColor: 'Shadow color', outline: 'Outline', shadowSize: 'Shadow spread', textShadowOpacity: 'Shadow opacity', textShadowX: 'Shadow X', textShadowY: 'Shadow Y', textShadowBlur: 'Blur', shadowX: 'Shadow X', shadowY: 'Shadow Y', shadowBlur: 'Shadow blur', bold: 'Bold', italic: 'Italic', underline: 'Underline', removeLayer: 'Remove selected layer', fontsLoaded: '{count} installed font families loaded.', noFontsFound: 'This browser returned no local fonts. The fallback list remains available.', fontAccessUnsupported: 'This browser cannot list installed fonts. Use desktop Chrome or Edge.', fontAccessDenied: 'Font access was not allowed. You can enable Local fonts in the site permissions and try again.',
     blend: '5. Final quality adjustment', blendHint: 'Analyze the original background and subject locally, then fine-tune every visible value while watching the preview.', resetQuality: 'Reset to initial state', autoQuality: 'Recommended auto adjust', adjustmentStrength: 'Auto strength', weak: 'Weak', standard: 'Standard', strong: 'Strong', qualityLocalHint: 'All analysis and rendering are processed locally in this browser, so there are no additional charges.', toneGroup: 'Color & tone', depthGroup: 'Depth & edges', textureGroup: 'Texture', shadowGroup: 'Shadow', backgroundBlur: 'Background blur', brightness: 'Brightness', contrast: 'Contrast', saturation: 'Saturation', temperature: 'Color temperature', edgeSoftness: 'Edge softness', colorSpill: 'Background color spill', sharpness: 'Subject sharpness', grain: 'Global grain', shadowDistance: 'Shadow distance', shadowOpacity: 'Shadow opacity', shadowBlur: 'Shadow blur', qualityApplied: 'Original assets analyzed locally; recommended values applied.', qualityReset: 'Final quality adjustments reset. Images, placement, and text were preserved.',
     promise: 'Build Week promise', promiseLocal: 'Original images remain local during editing.', promiseExplicit: 'AI runs only when you press an AI button.', promiseMatch: 'Download matches this preview.',
     start: 'Start with a background or a subject image.', subjectLoaded: 'Subject loaded. Original pixels stay local in this browser.', backgroundLoaded: 'Background loaded. Original pixels stay local in this browser.', badImage: 'That image could not be read. Try PNG, JPEG, or WebP.', exported: 'PNG exported from the exact same canvas used for the preview.', subjectSaved: 'The cutout/source image was saved without compositing.', backgroundSaved: 'The background image was saved without compositing.', localAiNotConfigured: 'Local cutout is not installed. Run npm run setup:local-ai, then restart the server.', backgroundAiNotConfigured: 'Background generation needs OPENAI_API_KEY in .env. Restart the server after adding it.', uploadSubjectFirst: 'Upload a source image first.', describeKeep: 'Describe what to keep before creating the local cutout.', sourcePrepareFailed: 'The source image could not be prepared.', masking: 'Local AI is translating the prompt, detecting the subject, and refining its edges. The first run can take several minutes.', maskApplied: 'Local transparent cutout completed. Original RGB pixels and image proportions were preserved.', maskFailed: 'The local cutout failed.', describeBackground: 'Describe the background you want to generate.', generatingBackground: 'GPT Image 2 is generating a {quality} quality background. This can take up to two minutes.', backgroundGenerated: 'AI background generated and loaded. It is now edited locally like an uploaded background.', backgroundFailed: 'Background generation failed.',
@@ -69,7 +69,7 @@ const COPY = {
     subject: '3. 被写体・配置', uploadSource: '元画像をアップロード', keepQuestion: 'Soul Picsに何を残しますか？', keepPlaceholder: '例：人物と手に持っている製品だけを残す', creatingMask: 'ローカル切り抜き中…', createMask: 'ローカルAIで切り抜く', saveSubject: '切り抜き素材を保存', maskHint: 'プロンプトの指示内容をPC内で変換し、Grounding DINO・SAM 2.1・BiRefNetで処理します。すべてローカルで行うため、別途料金は発生しません。',
     placement: '配置調整', size: 'サイズ', x: 'X位置', y: 'Y位置', rotation: '回転', brightness: '明るさ', contrast: 'コントラスト', flip: '左右反転', flipVertical: '上下反転',
     output: '出力', outputHint: 'プレビューと保存画像は同じCanvasレンダラーを使用します。', dragHint: 'プレビュー上の背景・被写体・テキストを直接ドラッグして移動できます。', previewLabel: 'Soul Pics出力プレビュー', processing: '処理中', processingHint: 'このタブを閉じずにお待ちください。完了するとプレビューが自動更新されます。', loadingBackground: '背景画像を読み込んで準備しています…', loadingSubject: '被写体画像を読み込んで準備しています…', loadingFontsProcessing: 'このPCにインストールされたフォントを読み込んでいます…',
-    textLayers: '4. テキストレイヤー', textBlock: '文字', outlineBlock: '線', shadowBlock: '影', blockColor: '色', blockWidth: '幅', blockOpacity: '濃度', blockSpread: '広がり', blockBlur: 'ぼかし', layer: 'レイヤー', addLayer: 'テキストレイヤーを追加', text: 'テキスト', font: 'フォント', loadFonts: 'PCフォント', loadingFonts: '読込中…', textColor: '文字色', outlineColor: '縁取り色', shadowColor: '影の色', outline: '線幅', shadowSize: '影の広がり', textShadowOpacity: '影の濃度', textShadowX: '影X', textShadowY: '影Y', textShadowBlur: 'ぼかし', shadowX: '影のX位置', shadowY: '影のY位置', shadowBlur: '影のぼかし', bold: '太字', italic: '斜体', underline: '下線', removeLayer: '選択中のレイヤーを削除', fontsLoaded: 'インストール済みフォントを{count}ファミリー読み込みました。', noFontsFound: 'このブラウザからローカルフォントが返されませんでした。標準候補は引き続き使用できます。', fontAccessUnsupported: 'このブラウザではPCフォントを列挙できません。デスクトップ版ChromeまたはEdgeをお使いください。', fontAccessDenied: 'フォント参照が許可されませんでした。サイトの権限で「ローカル フォント」を許可して再実行できます。',
+    textLayers: '4. テキストレイヤー', textBlock: '文字', backgroundBlock: 'テキスト背景', outlineBlock: '縁取り', shadowBlock: '影', blockColor: '色', blockWidth: '幅', blockOpacity: '透明度', blockSpread: '広がり', blockBlur: 'ぼかし', blockPaddingX: '左右余白', blockPaddingY: '上下余白', blockRadius: '角丸', layer: 'レイヤー', addLayer: 'テキストレイヤーを追加', text: 'テキスト', font: 'フォント', loadFonts: 'PCフォント', loadingFonts: '読込中…', textColor: '文字色', outlineColor: '縁取り色', shadowColor: '影の色', outline: '線幅', shadowSize: '影の広がり', textShadowOpacity: '影の濃度', textShadowX: '影X', textShadowY: '影Y', textShadowBlur: 'ぼかし', shadowX: '影のX位置', shadowY: '影のY位置', shadowBlur: '影のぼかし', bold: '太字', italic: '斜体', underline: '下線', removeLayer: '選択中のレイヤーを削除', fontsLoaded: 'インストール済みフォントを{count}ファミリー読み込みました。', noFontsFound: 'このブラウザからローカルフォントが返されませんでした。標準候補は引き続き使用できます。', fontAccessUnsupported: 'このブラウザではPCフォントを列挙できません。デスクトップ版ChromeまたはEdgeをお使いください。', fontAccessDenied: 'フォント参照が許可されませんでした。サイトの権限で「ローカル フォント」を許可して再実行できます。',
     blend: '5. 最終画質調整', blendHint: '元の背景と被写体をローカル解析し、表示された推奨値をプレビューを見ながら微調整できます。', resetQuality: '初期状態に戻す', autoQuality: 'おすすめ自動調整', adjustmentStrength: '自動調整の強さ', weak: '弱', standard: '標準', strong: '強', qualityLocalHint: '解析と描画はすべてこのブラウザ内でローカル処理するため、別途料金は発生しません。', toneGroup: '色・トーン', depthGroup: '奥行き・輪郭', textureGroup: '質感', shadowGroup: '影', backgroundBlur: '背景ぼかし', brightness: '明るさ', contrast: 'コントラスト', saturation: '彩度', temperature: '色温度', edgeSoftness: '輪郭の柔らかさ', colorSpill: '背景色の回り込み', sharpness: '被写体のシャープネス', grain: '全体の粒状感', shadowDistance: '影の距離', shadowOpacity: '影の濃さ', shadowBlur: '影のぼかし', qualityApplied: '元画像をローカル解析し、推奨値を反映しました。', qualityReset: '画質調整を初期化しました。画像・配置・文字は保持されています。',
     promise: 'Build Weekでの約束', promiseLocal: '編集中の元画像はローカルに保持します。', promiseExplicit: 'AIはAIボタンを押したときだけ実行します。', promiseMatch: '保存画像はこのプレビューと一致します。',
     start: '背景画像または被写体画像から始めましょう。', subjectLoaded: '被写体を読み込みました。元画像はこのブラウザ内に保持されます。', backgroundLoaded: '背景を読み込みました。元画像はこのブラウザ内に保持されます。', badImage: '画像を読み込めませんでした。PNG、JPEG、WebPをお試しください。', exported: 'プレビューと同じCanvasからPNGを保存しました。', subjectSaved: '合成前の切り抜き／被写体素材を保存しました。', backgroundSaved: '合成前の背景素材を保存しました。', localAiNotConfigured: 'ローカル切り抜きが未導入です。npm run setup:local-aiを実行し、サーバーを再起動してください。', backgroundAiNotConfigured: '背景生成には.envのOPENAI_API_KEYが必要です。設定後にサーバーを再起動してください。', uploadSubjectFirst: '最初に元画像をアップロードしてください。', describeKeep: 'ローカル切り抜きを実行する前に、残したい対象を入力してください。', sourcePrepareFailed: '元画像を処理用に準備できませんでした。', masking: '日本語指示の変換、被写体検出、輪郭精製をPC内で実行しています。初回は数分かかる場合があります。', maskApplied: 'ローカル切り抜きが完了しました。元画像のRGB画素と縦横比を維持しています。', maskFailed: 'ローカル切り抜き処理に失敗しました。', describeBackground: '生成したい背景を入力してください。', generatingBackground: 'GPT Image 2が{quality}品質の背景を生成しています。最大2分ほどかかる場合があります。', backgroundGenerated: 'AI背景を生成して読み込みました。以後はアップロード背景と同じようにローカルで編集できます。', backgroundFailed: '背景生成に失敗しました。',
@@ -81,6 +81,8 @@ const freshText = (value = 'Your headline') => ({
   color: '#ffffff', font: 'Arial, sans-serif', weight: 800, italic: false, underline: false,
   stroke: 5, strokeColor: '#111111', shadowColor: '#000000', shadowX: 6,
   shadowY: 8, shadowSpread: 0, shadowBlur: 8, shadowOpacity: 45,
+  backgroundColor: '#20252a', backgroundOpacity: 0, backgroundPaddingX: 28,
+  backgroundPaddingY: 14, backgroundRadius: 12, backgroundBlur: 0,
 })
 const DEFAULT_QUALITY=Object.freeze({enabled:false,backgroundBlur:0,brightness:0,contrast:0,saturation:0,temperature:0,edgeSoftness:0,colorSpill:0,spillColor:'#647fa3',sharpness:0,grain:0,shadowDistance:0,shadowOpacity:0,shadowBlur:0})
 const clamp=(v,min,max)=>Math.min(max,Math.max(min,v))
@@ -122,6 +124,21 @@ function hexToRgba(hex, opacity) {
   const value = hex.replace('#', '')
   const number = Number.parseInt(value.length === 3 ? value.split('').map((item) => item + item).join('') : value, 16)
   return `rgba(${(number >> 16) & 255}, ${(number >> 8) & 255}, ${number & 255}, ${opacity})`
+}
+
+function roundedRectPath(ctx, x, y, width, height, radius) {
+  const r = Math.min(Math.max(0, radius), width / 2, height / 2)
+  ctx.beginPath()
+  ctx.moveTo(x + r, y)
+  ctx.lineTo(x + width - r, y)
+  ctx.quadraticCurveTo(x + width, y, x + width, y + r)
+  ctx.lineTo(x + width, y + height - r)
+  ctx.quadraticCurveTo(x + width, y + height, x + width - r, y + height)
+  ctx.lineTo(x + r, y + height)
+  ctx.quadraticCurveTo(x, y + height, x, y + height - r)
+  ctx.lineTo(x, y + r)
+  ctx.quadraticCurveTo(x, y, x + r, y)
+  ctx.closePath()
 }
 
 function sampleBackgroundTint(project) {
@@ -180,6 +197,38 @@ function renderProject(canvas,p){const z=projectPreset(p);canvas.width=z.width;c
   ctx.textBaseline = 'middle'
   ctx.font = (l.italic ? 'italic ' : '') + l.weight + ' ' + l.size + 'px ' + l.font
   ctx.lineJoin = 'round'
+  const metrics = ctx.measureText(l.value)
+  const textHeight = Math.max(l.size, metrics.actualBoundingBoxAscent + metrics.actualBoundingBoxDescent)
+  const backgroundOpacity = clamp(l.backgroundOpacity ?? 0, 0, 100) / 100
+  const backgroundBlur = Math.max(0, l.backgroundBlur ?? 0)
+  if (backgroundOpacity > 0 || backgroundBlur > 0) {
+    const paddingX = Math.max(0, l.backgroundPaddingX ?? 28)
+    const paddingY = Math.max(0, l.backgroundPaddingY ?? 14)
+    const boxWidth = metrics.width + paddingX * 2
+    const boxHeight = textHeight + paddingY * 2
+    const boxX = l.x - boxWidth / 2
+    const boxY = l.y - boxHeight / 2
+    const radius = Math.max(0, l.backgroundRadius ?? 12)
+    if (backgroundBlur > 0) {
+      const snapshot = document.createElement('canvas')
+      snapshot.width = z.width
+      snapshot.height = z.height
+      snapshot.getContext('2d').drawImage(canvas, 0, 0)
+      ctx.save()
+      roundedRectPath(ctx, boxX, boxY, boxWidth, boxHeight, radius)
+      ctx.clip()
+      ctx.filter = 'blur(' + backgroundBlur + 'px)'
+      ctx.drawImage(snapshot, 0, 0)
+      ctx.restore()
+    }
+    if (backgroundOpacity > 0) {
+      ctx.save()
+      ctx.fillStyle = hexToRgba(l.backgroundColor || '#20252a', backgroundOpacity)
+      roundedRectPath(ctx, boxX, boxY, boxWidth, boxHeight, radius)
+      ctx.fill()
+      ctx.restore()
+    }
+  }
   const spread = Math.max(0, l.shadowSpread || 0)
   const blur = Math.max(0, l.shadowBlur || 0)
   const opacity = Math.max(0, Math.min(100, l.shadowOpacity ?? 45)) / 100
@@ -252,9 +301,12 @@ function hitTextLayer(ctx, point, layer) {
   ctx.font = `${layer.italic ? 'italic ' : ''}${layer.weight} ${layer.size}px ${layer.font}`
   const metrics = ctx.measureText(layer.value)
   ctx.restore()
-  const width = metrics.width + layer.stroke * 2 + 24
+  const backgroundActive = (layer.backgroundOpacity ?? 0) > 0 || (layer.backgroundBlur ?? 0) > 0
+  const backgroundPaddingX = backgroundActive ? (layer.backgroundPaddingX ?? 28) * 2 : 24
+  const backgroundPaddingY = backgroundActive ? (layer.backgroundPaddingY ?? 14) * 2 : 18
+  const width = metrics.width + Math.max(layer.stroke * 2 + 24, backgroundPaddingX)
   const measuredHeight = metrics.actualBoundingBoxAscent + metrics.actualBoundingBoxDescent
-  const height = Math.max(measuredHeight, layer.size) + layer.stroke * 2 + 18
+  const height = Math.max(measuredHeight, layer.size) + Math.max(layer.stroke * 2 + 18, backgroundPaddingY)
   return Math.abs(point.x - layer.x) <= width / 2 && Math.abs(point.y - layer.y) <= height / 2
 }
 
@@ -611,6 +663,11 @@ function App() {
                 </div>
                 <div className="text-size-style-row"><Range label={tr.size} value={activeText.size} min="16" max="220" onChange={(value) => updateText({ size: value })}/><div className="compact-style-checks block-style-checks"><label title={tr.bold}><b>B</b><input type="checkbox" aria-label={tr.bold} checked={activeText.weight > 500} onChange={(e) => updateText({ weight: e.target.checked ? 800 : 400 })}/></label><label title={tr.italic}><i>I</i><input type="checkbox" aria-label={tr.italic} checked={activeText.italic} onChange={(e) => updateText({ italic: e.target.checked })}/></label><label title={tr.underline}><span className="underline-mark">U</span><input type="checkbox" aria-label={tr.underline} checked={Boolean(activeText.underline)} onChange={(e) => updateText({ underline: e.target.checked })}/></label></div></div>
                 <div className="range-grid block-position-grid"><Range label={tr.x} value={activeText.x} min="0" max={preset.width} onChange={(value) => updateText({ x: value })}/><Range label={tr.y} value={activeText.y} min="0" max={preset.height} onChange={(value) => updateText({ y: value })}/></div>
+              </div>
+              <div className="editor-block backdrop-style-block">
+                <h3>{tr.backgroundBlock}</h3>
+                <div className="backdrop-primary-row"><label className="block-color backdrop-color"><span className="block-color-label">{tr.blockColor}</span><input type="color" value={activeText.backgroundColor || '#20252a'} onChange={(e) => updateText({ backgroundColor: e.target.value })}/></label><Range label={tr.blockOpacity} value={activeText.backgroundOpacity ?? 0} min="0" max="100" onChange={(value) => updateText({ backgroundOpacity: value })}/></div>
+                <div className="range-grid backdrop-control-grid"><Range label={tr.blockPaddingX} value={activeText.backgroundPaddingX ?? 28} min="0" max="120" onChange={(value) => updateText({ backgroundPaddingX: value })}/><Range label={tr.blockPaddingY} value={activeText.backgroundPaddingY ?? 14} min="0" max="80" onChange={(value) => updateText({ backgroundPaddingY: value })}/><Range label={tr.blockRadius} value={activeText.backgroundRadius ?? 12} min="0" max="80" onChange={(value) => updateText({ backgroundRadius: value })}/><Range label={tr.blockBlur} value={activeText.backgroundBlur ?? 0} min="0" max="30" onChange={(value) => updateText({ backgroundBlur: value })}/></div>
               </div>
               <div className="editor-block outline-style-block">
                 <h3>{tr.outlineBlock}</h3>

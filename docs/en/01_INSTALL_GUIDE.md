@@ -1,4 +1,4 @@
-# Soul Pics v0.7.20 Installation Guide
+# Soul Pics v1.0.0 Installation Guide
 
 ## 1. Requirements
 
@@ -16,7 +16,7 @@ Git is optional and needed only when obtaining the source from a repository. An 
 Extract the ZIP to a writable folder, open Command Prompt, and move to the project folder.
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm ci --no-audit --no-fund
 ```
 
@@ -45,14 +45,14 @@ For manual startup, open two Command Prompt windows and start the API server bef
 Command Prompt 1:
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm run server
 ```
 
 Command Prompt 2:
 
 ```bat
-cd /d C:\path\to\Soul_Pics_v0.7.20
+cd /d C:\path\to\Soul_Pics_v1.0.0
 npm run dev
 ```
 

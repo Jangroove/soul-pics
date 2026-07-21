@@ -11,7 +11,7 @@ import multer from 'multer'
 import OpenAI from 'openai'
 import sharp from 'sharp'
 
-const SOURCE_VERSION = 'v0.7.20'
+const SOURCE_VERSION = 'v1.0.0'
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
 try {

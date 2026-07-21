@@ -3,10 +3,11 @@
 <img src="public/brand/soul-pics-logo.png" alt="Soul Pics official logo" width="120">
 
 Updated: 2026-07-22
-Status: v0.7.20 local prompt cutout, UI polish, bilingual guides, demo narration, clean submission packaging, and production build implemented; final verification and external submission steps remain.
+Status: v1.0.0 formal release completed with local prompt cutout, bilingual UI and guides, local final-quality adjustment, per-text caption backgrounds, clean submission packaging, and verified production build.
 
 ## Version history
 
+- v1.0.0: promoted the project to its first formal release and added per-text caption backgrounds with color, opacity, padding, corner radius, and local blur controls.
 - v0.7.20: synchronized final guides and submission materials with the v0.7.19 UI and the assembled sub-three-minute English AI-voice demo.
 - v0.7.19: localized the remaining Japanese-only labels in the English Background upload panel.
 - v0.7.18: made horizontal/vertical flips mirror the currently displayed rotated subject and aligned hit-testing.

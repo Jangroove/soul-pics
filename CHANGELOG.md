@@ -2,6 +2,13 @@
 
 Versioning rule: after a minor-version milestone, each approved, meaningful application change increments the patch number by one. Historical evidence files keep the version under which they were created.
 
+## v1.0.0 — 2026-07-22
+
+- Promoted Soul Pics to its first formal release.
+- Added per-text-layer caption backgrounds with adjustable color, opacity, horizontal and vertical padding, corner radius, and local background blur.
+- Rendered the new background plate through the same Canvas pipeline used by both preview and PNG export.
+- Renamed the Japanese text outline section from **線** to the clearer **縁取り**.
+
 ## v0.7.20 — 2026-07-22
 
 - Synchronized the English user guide with the final Background upload labels introduced in v0.7.19.
