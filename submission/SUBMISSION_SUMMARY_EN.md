@@ -22,7 +22,9 @@ OpenAI API is used only for the explicit prompt-based background generation acti
 - `npm run build`: passed with Vite 8.1.5
 - Local cutout direct path and actual `/api/mask` route: passed on a 5712×4284 Japanese-prompt test
 - Paid background-generation test: optional and pending an explicit release-test decision
-- Demo video: exported at 2:35 with English AI voice covering the product, Codex, and GPT-5.6; uploaded publicly to https://youtu.be/pDBDTgWetPk. End-to-end playback review and Devpost URL entry remain external submission actions.
+- Demo video: exported at 2:35 with English AI voice covering the product, Codex, and GPT-5.6; uploaded publicly to https://youtu.be/pDBDTgWetPk and entered in Devpost.
+- Public source repository: https://github.com/Jangroove/soul-pics
+- Primary Codex Session ID: `019f753f-dc7e-7a10-b2f6-61f2fa4d3f07`
 
 ## Translation disclosure
 

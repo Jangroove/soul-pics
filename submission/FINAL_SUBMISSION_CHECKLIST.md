@@ -22,9 +22,9 @@
 - [ ] Visually review the exported MP4 from beginning to end
 - [x] Upload the demo to YouTube: https://youtu.be/pDBDTgWetPk
 - [x] Confirm YouTube visibility is Public
-- [ ] Add the YouTube URL to Devpost
-- [ ] Create the final thumbnail with Soul Pics
-- [ ] Provide a working test-build or repository route for judges
-- [ ] Submit the required Codex Session ID or feedback reference
+- [x] Add the public YouTube URL to Devpost
+- [ ] Optional: replace the Devpost placeholder thumbnail with a custom Soul Pics thumbnail
+- [x] Provide the public GitHub repository and reproducible release route for judges
+- [x] Submit the required Codex Session ID for the primary development task
 
 Do not mark an unchecked item complete without direct evidence. API credentials, account balances, and other personal billing details do not belong in the public archive.
