@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:15,000
+When you only want to change a layout, rebuilding the entire image can change the subject or composition.
+
+2
+00:00:15,000 --> 00:00:35,000
+Choose a canvas size and upload a background, or explicitly generate one with the paid background API.
+
+3
+00:00:35,000 --> 00:00:55,000
+Describe what to keep and press Create local cutout. Local models create the transparent PNG without an API charge.
+
+4
+00:00:55,000 --> 00:01:20,000
+Place the subject, tune it locally, and add editable text layers.
+
+5
+00:01:20,000 --> 00:01:40,000
+Final-quality adjustment runs in the browser without an API call.
+
+6
+00:01:40,000 --> 00:01:55,000
+Preview and PNG export use the same Canvas renderer.
+
+7
+00:01:55,000 --> 00:02:05,000
+Originally created in Japanese. English translation assisted by ChatGPT and reviewed by the creator.

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.codex-image-preview/
+artifacts/
+.env
+.env.*
+!.env.example
+.local-ai/
+local_ai/model_cache/
+local_ai/__pycache__/

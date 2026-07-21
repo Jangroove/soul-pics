@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Soul Pics official logo</title>
+  <desc id="desc">Official Soul Pics SP monogram: centered finder composition, dimensional lime-to-orange S, and subtly darker P.</desc>
+  <defs>
+    <linearGradient id="main-stroke" x1="14" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d5ffcc"/>
+      <stop offset=".37" stop-color="#21ff21"/>
+      <stop offset=".7" stop-color="#9fd63c"/>
+      <stop offset="1" stop-color="#ff9f00"/>
+    </linearGradient>
+    <linearGradient id="p-main-stroke" x1="14" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c0e6b8"/>
+      <stop offset=".37" stop-color="#1ee61e"/>
+      <stop offset=".7" stop-color="#8fc136"/>
+      <stop offset="1" stop-color="#e68f00"/>
+    </linearGradient>
+    <linearGradient id="specular" x1="15" y1="8" x2="50" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".88"/>
+      <stop offset=".48" stop-color="#d7ffd2" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#fff1d6" stop-opacity=".15"/>
+    </linearGradient>
+    <radialGradient id="shell" cx=".31" cy=".22" r=".88">
+      <stop offset="0" stop-color="#123b30"/>
+      <stop offset=".63" stop-color="#071f1a"/>
+      <stop offset="1" stop-color="#03100e"/>
+    </radialGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.9"/>
+    </filter>
+    <clipPath id="inner-shell-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="3.2" y="3.2" width="57.6" height="57.6" rx="10.8"/>
+    </clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="url(#shell)" stroke="#416f5d" stroke-width="1.1"/>
+  <rect x="3.2" y="3.2" width="57.6" height="57.6" rx="10.8" fill="none" stroke="#102f27" stroke-width=".7"/>
+
+  <g clip-path="url(#inner-shell-clip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(1.52 5.32) scale(.89)">
+    <!-- P remains fixed at the v6 position. -->
+    <g transform="translate(-6.8 0) rotate(15 49 38)">
+    <path d="M42.5 53.3V22H49C55.5 22 59 25.1 59 29.8C59 34.7 55.2 37.6 49 37.6H42.5"
+          stroke="#2be633" stroke-width="14.2" opacity=".12" filter="url(#soft-glow)"/>
+    <path d="M42.5 53.3V22H49C55.5 22 59 25.1 59 29.8C59 34.7 55.2 37.6 49 37.6H42.5"
+          transform="translate(1 1.2)" stroke="#020b09" stroke-width="10.6" opacity=".78"/>
+    <path d="M42.5 53.3V22H49C55.5 22 59 25.1 59 29.8C59 34.7 55.2 37.6 49 37.6H42.5"
+          stroke="url(#p-main-stroke)" stroke-width="9.45"/>
+    <path d="M42.5 53.3V22H49C55.5 22 59 25.1 59 29.8C59 34.7 55.2 37.6 49 37.6H42.5"
+          transform="translate(-.45 -.55)" stroke="url(#specular)" stroke-width="2.6" opacity=".68"/>
+    </g>
+
+    <!-- S and P keep their original relationship; the parent group moves them together. -->
+    <g transform="translate(4.6 4.6) scale(.7)">
+      <g transform="translate(7.04 7.04) scale(.78)">
+        <path d="M50.435 18C50.435 10.5 42.23 6.5 32 6.5C21.77 6.5 12.565 13.2 12.565 21.5C12.565 28.7 21.77 32 32 32C44 32 53 37.5 53 45.5C53 54 43 58 31 58C18 58 9 51 9 44.2"
+              stroke="#30ff39" stroke-width="26.02" opacity=".16" filter="url(#soft-glow)"/>
+        <path d="M50.435 18C50.435 10.5 42.23 6.5 32 6.5C21.77 6.5 12.565 13.2 12.565 21.5C12.565 28.7 21.77 32 32 32C44 32 53 37.5 53 45.5C53 54 43 58 31 58C18 58 9 51 9 44.2"
+              transform="translate(1.15 1.35)" stroke="#020b09" stroke-width="19.23" opacity=".8"/>
+        <path d="M50.435 18C50.435 10.5 42.23 6.5 32 6.5C21.77 6.5 12.565 13.2 12.565 21.5C12.565 28.7 21.77 32 32 32C44 32 53 37.5 53 45.5C53 54 43 58 31 58C18 58 9 51 9 44.2"
+              stroke="url(#main-stroke)" stroke-width="17.31"/>
+        <path d="M50.435 18C50.435 10.5 42.23 6.5 32 6.5C21.77 6.5 12.565 13.2 12.565 21.5C12.565 28.7 21.77 32 32 32C44 32 53 37.5 53 45.5C53 54 43 58 31 58C18 58 9 51 9 44.2"
+              transform="translate(-.7 -.75)" stroke="url(#specular)" stroke-width="3.68" opacity=".78"/>
+      </g>
+    </g>
+    </g>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 9h-6a6 6 0 0 0-6 6v6 M43 9h6a6 6 0 0 1 6 6v6 M21 55h-6a6 6 0 0 1-6-6v-6 M43 55h6a6 6 0 0 0 6-6v-6"
+          stroke="#d5eee0" stroke-width="1.2" opacity=".58"/>
+    <path d="M32 7.5V12 M32 52v4.5 M7.5 32H12 M52 32h4.5"
+          stroke="#8fbca4" stroke-width="1.05" opacity=".71"/>
+  </g>
+</svg>
