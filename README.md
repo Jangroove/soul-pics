@@ -1,5 +1,7 @@
 # Soul Pics v0.7.20
 
+![Soul Pics — OpenAI Build Week thumbnail](submission/Soul_Pics_Devpost_Thumbnail.png)
+
 <img src="public/brand/soul-pics-logo.png" alt="Soul Pics official logo" width="120">
 
 **Say what to keep. Place it anywhere. Add the words that make it yours.**
@@ -96,3 +98,4 @@ Soul Pics source code is released under the [MIT License](LICENSE). Third-party 
 - Public 2:35 YouTube demo with English audio: https://youtu.be/pDBDTgWetPk
 - Judge test path: clone this repository and follow `docs/en/01_INSTALL_GUIDE.md`
 - Primary Codex Session ID: `019f753f-dc7e-7a10-b2f6-61f2fa4d3f07`
+- The Devpost thumbnail was composed and exported in Soul Pics itself.

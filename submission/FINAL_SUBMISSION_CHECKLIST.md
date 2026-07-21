@@ -23,7 +23,7 @@
 - [x] Upload the demo to YouTube: https://youtu.be/pDBDTgWetPk
 - [x] Confirm YouTube visibility is Public
 - [x] Add the public YouTube URL to Devpost
-- [ ] Optional: replace the Devpost placeholder thumbnail with a custom Soul Pics thumbnail
+- [x] Create and quality-check the final Devpost thumbnail in Soul Pics itself
 - [x] Provide the public GitHub repository and reproducible release route for judges
 - [x] Submit the required Codex Session ID for the primary development task
 

@@ -25,6 +25,7 @@ OpenAI API is used only for the explicit prompt-based background generation acti
 - Demo video: exported at 2:35 with English AI voice covering the product, Codex, and GPT-5.6; uploaded publicly to https://youtu.be/pDBDTgWetPk and entered in Devpost.
 - Public source repository: https://github.com/Jangroove/soul-pics
 - Primary Codex Session ID: `019f753f-dc7e-7a10-b2f6-61f2fa4d3f07`
+- The Devpost thumbnail was composed and exported in Soul Pics itself, using the app UI as a blurred background and Soul Pics text layers.
 
 ## Translation disclosure
 
