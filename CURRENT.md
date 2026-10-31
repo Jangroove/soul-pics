@@ -2,11 +2,26 @@
 
 <img src="public/brand/soul-pics-logo.png" alt="Soul Pics official logo" width="120">
 
-Updated: 2026-07-22
-Status: v1.0.0 formal release completed with local prompt cutout, bilingual UI and guides, local final-quality adjustment, per-text caption backgrounds, clean submission packaging, and verified production build.
+Updated: 2026-10-31
+Status: v1.0.9 remains the current app version. The canonical source is the G-drive project source; the company Windows runtime copy is aligned to it. App Desk reported READY, UI and API returned HTTP 200, and the API reported sourceVersion v1.0.9. Local AI cutout remains unavailable because Python and model setup are absent; no AI job was run.
 
+## Home acceptance — 2026-10-28
+
+- Device: home PC. Previous runtime: legacy AppData copy. New App Desk runtime: dedicated local application folder.
+- v1.0.7 source deployed with 51 matching file hashes; local npm ci and npm run check passed. UI HTTP 200, API health v1.0.7, Codex CLI detected and logged in with ChatGPT.
+- Backup: local copy retained on the source workstation; user-specific path omitted from this public copy.
+- No image job executed at home. New v1.0.8 runtime is deployed; App Desk launch acceptance is pending. Earlier v1.0.1 next-work notes below are historical.
+- Shared root CURRENT.md/START_HERE.md now point to this version. Git remains dirty at c991d11; no commit or publication.
 ## Version history
 
+- v1.0.1: unified UI typography, readable lime palette, range-label layout, contextual button labels, and responsive panel layout; no Canvas/AI algorithm change.
+- v1.0.2: added a manual ChatGPT Work handoff with a local temporary exchange folder, transparent PNG watcher, and automatic subject import; no API call. End-to-end app verification is pending the missing Vite dependency.
+- v1.0.3: changed the Work prompt to reference the exact local source and result paths, with no source attachment; adds explicit Work-local-folder access guidance and a visible folder path/reopen control.
+- v1.0.4: added a Codex App Server task that receives the selected image and prompt, writes a transparent PNG into the exchange folder, and lets Soul Pics import it automatically. The first app-server run exposed a PATH issue, fixed in v1.0.5.
+- v1.0.5: resolve the Windows Codex executable from its standard install directory if PATH does not include it. Verified a full App Server cutout and PNG result response.
+- v1.0.6: replace the background OpenAI API route with a Codex App Server job. The prompt and target canvas size are sent without an input image; the returned PNG is resized/cropped to exact dimensions and imported to the background layer. End-to-end background generation remains to be tried.
+- v1.0.7: count image-generation item starts from App Server notifications during Codex cutout, show the count on completion, and record event details in the temporary job folder's `codex-activity.json`.
+- v1.0.9: align the UI and API version identifiers after finding that the v1.0.8 runtime's API reported `v1.0.8` while its UI still declared `v1.0.7`, disabling the Codex cutout button.
 - v1.0.0: promoted the project to its first formal release and added per-text caption backgrounds with color, opacity, padding, corner radius, and local blur controls.
 - v0.7.20: synchronized final guides and submission materials with the v0.7.19 UI and the assembled sub-three-minute English AI-voice demo.
 - v0.7.19: localized the remaining Japanese-only labels in the English Background upload panel.
@@ -56,10 +71,10 @@ Status: v1.0.0 formal release completed with local prompt cutout, bilingual UI a
 
 ## Canonical project state
 
-- Project root: `Soul_Pics_Build_Week`
+- Canonical app root: `G:\マイドライブ\03_Projects\Soul Pics\Source\Soul_Pics`
 - App: Vite + React frontend with local Express API server
 - UI languages: English / Japanese switch
-- API key: optional and used only for background generation
+- Codex CLI: signed-in local installation used by Codex subject cutout and background generation; Soul Pics does not need an OpenAI API key for either.
 - Image viewer: `.codex-image-preview/preview_viewer.html`
 
 ## Official logo
@@ -84,9 +99,21 @@ Status: v1.0.0 formal release completed with local prompt cutout, bilingual UI a
 - Non-destructive reset that preserves original assets, placement, and text
 - Processing overlay timed to actual user-to-computer work
 - Preview and PNG export share the same Canvas renderer
-- Responsive one-screen tab-oriented editor layout
+- Responsive tab-oriented editor: desktop panels scroll internally; narrower screens use page scrolling
 
 ## Verification completed
+
+### v1.0.1 — 2026-09-30
+
+- `npm run check` passed on an equivalent source copy in local temporary storage; Google Drive dependency extraction failed with UNKNOWN/EBADF errors.
+- 112 states: Japanese/English, 14 widths from 320px to 1920px, four panel states; no measured horizontal overflow or label/stepper/B-I-U overlap.
+- Range labels and numeric inputs stay at 13px across those widths.
+- Text effects, layer add/delete, upload, flips, drag, picker cancellation, quality reset, custom/portrait Canvas, and language switch passed.
+- PNG bytes matched the displayed Canvas data URL in both languages. No AI operation was requested; health was mocked.
+- Evidence: `work/ui-v1.0.1-verification-2026-09-30/`; detailed report: `docs/ja/09_UI_REFINEMENT_2026-09-30.md`.
+- Pre-change source: `../../Archive/2026-09-30_v1.0.0_before_ui_refinement/`.
+
+### Historical v1.0.0 verification (not rerun for this UI-only change)
 
 - `npm run build` passes with Vite 8.1.5
 - Japanese prompt normalized locally to `red bass guitar`; Grounding DINO confidence 0.9029
@@ -100,11 +127,9 @@ Status: v1.0.0 formal release completed with local prompt cutout, bilingual UI a
 
 ## Next meaningful work
 
-1. Decide whether to run the one remaining paid Low-quality background generation test.
-2. Record the English demo and review captions/narration.
-3. Create the final thumbnail with Soul Pics.
-4. Choose the public hosting/submission destination.
-5. Scan, archive, checksum, and submit the final package.
+1. Review the v1.0.1 appearance with the user on the intended display.
+2. Resolve Google Drive dependency-installation errors before claiming direct startup from G: works on this PC.
+3. Preserve the v1.0.0 submission; publish or commit only when explicitly requested.
 
 ## Continuity note
 

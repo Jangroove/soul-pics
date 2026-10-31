@@ -1,12 +1,13 @@
 {
   "name": "soul-pics-build-week",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.9",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "server": "node server/index.js",
     "build": "vite build",
+    "check": "npm run build && node --check server/index.js",
     "preview": "vite preview",
     "setup:local-ai": "powershell -ExecutionPolicy Bypass -File scripts/setup-local-ai.ps1"
   },
